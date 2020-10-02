@@ -1,0 +1,60 @@
+% CREATED BY DAVID FRISK, 2018
+\chapter{Piloto automático} \textcolor{blue}{Jetbot? Robot real? como título}
+
+\section{\textit{Drivers} del robot}
+
+GAZEBO
+* Conexión de behavior con el simulador Gazebo
+* Piloto explícito para probar las funcionalidades de la aplicación (cambio de cerebro, cambio en caliente, cambio de entorno, grabación datasets, etc).
+* Réplica del trabajo de vane, pruebas con los cerebros neuronales
+
+
+ROBOT REAL
+* Contar el desarrollo del driver controlador de los motores y cámara (con el envoltorio ROS).
+* Contar la comunicación con la visualización? Lo dejamos en el modo headless?
+* Contar las pruebas con el joystick
+
+
+\section{Creación dataset}
+* Creación manual
+* Conjuntos de muestras obtenidos (250 vs 550)
+* El conjunto pequeño, más variabilidad
+* El conjunto grande menos variabilidad, más muestra
+* El conjunto combinado, mantiene el sesgo de la variabilidad.
+* Etiquetado para regresión. 
+* Conversión de etiquetas.
+* Normalización de la muestra
+* \textcolor{blue}{Análisis de datos?}
+
+
+\section{Piloto explícito???}
+* Piloto basado en OpenCV para simulación
+
+
+\section{Redes de regresión}
+* Contexto de redes de regresión
+* Redes residuales
+* Arquitectura Resnet-18
+* Arquitectura Resnet-34
+
+\subsection{Métricas de evaluación}
+* MSE
+* MAE?
+
+\subsection{Entrenamiento}
+* Mencionar el cambio de versión de pytorch para hacerlo compatible con el pc de escritorio
+* entrenado con una 970 (4 minutos) vs Jetson (1h30) (it/s?) con 250 muestras
+* Gráficas de entrenamiento con diferentes redes para el loss (MSE)
+
+\subsection{Rendimiento en diferentes pistas}
+* Tiempos por vuelta en las pistas probadas
+
+
+
+%% METER ESTA SECCION? O EXPLICARLA EN LA ANTERIOR??
+\section{Aumento de datos}
+* Denoising
+* Horizontal random flips
+
+\subsection{Rendimiento en diferentes pistas}
+* No completa ninguna

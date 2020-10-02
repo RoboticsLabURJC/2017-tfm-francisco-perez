@@ -1,0 +1,65 @@
+% CREATED BY DAVID FRISK, 2018
+\chapter{Introducción}
+
+En este capítulo se presenta tanto el contexto como la motivación principal que ha impulsado todo el desarrollo de este proyecto. Además se resumen los objetivos del sistema desarrollado seguido de un resumen de la estructura de este mismo documento.
+
+\section{Motivación}
+
+En estos últimos años la inteligencia artificial o IA ha explotado exponencialmente tanto en investigación, como en desarrollo. \todo{Definición de IA extensa}
+
+Han sido especialmente notorios dos campos dentro de la IA: la visión artificial con su explosión en 2012 gracias a AlexNet \cite{alexnet} y el procesamiento del lenguaje natural (NLP por sus siglas en inglés) con su auge en 2018 con la creación de BERT \cite{devlin2018bert}. Este proyecto se enmarca dentro del primer campo: la visión artificial.
+
+\subsection{Visión artificial}
+
+La IA comprende multitud de ramas diferentes que se centran en diferentes campos: Procesamiento del lenguaje natural, Ingeniería del conocimiento, Minería de datos, Aprendizaje automático, Aprendizaje profundo, Visión artificial, etc. 
+
+Este proyecto se basa en visión artificial, que trata de obtener significado (información relevante) de las imágenes a través de un procesamiento determinado, de tal forma que las máquinas que integren algoritmos de visión artificial sean capaces de emular el sistema visual humano tomando decisiones en función de lo que "ve" en cada momento, y actuar acorde a esa información.
+
+En 2012, se inicia una revolución en el campo de la visión artificial con la llegada de AlexNet \textcolor{red}{REF paper alexnet? o abajo}. Alex Krizhevsky batió todos los récords de precisión en el problema de clasificación de imágenes en el torneo anual de \textit{ImageNet} en 2012 al proponer un modelo basado en redes neuronales convolucionales. Después de competir en el \textit{ImageNet Large Scale Visual Recognition Challenge} \footnote{http://image-net.org/challenges/LSVRC/}, AlexNet saltó a la fama. Logró un error del 15,3\%. en la tarea de clasificación de imágenes, que fue un 10,8\% más bajo que el del segundo puesto. Este resultado fue gracias a la profundidad del modelo que era necesaria para su alto rendimiento y al uso de las redes neuronales convolucionales (CNN). En 2012 este tipo de procesamiento era muy caro desde el punto de vista computacional, pero se hizo factible gracias al uso de las GPU (\textit{Graphic Processing Unit} o Unidades de procesamiento gráfico) durante el entrenamiento.
+Tras este hito, el campo de la visión artificial explotó y comenzaron a surgir multitud de modelos novedosos que expandieron los límites del aprendizaje profundo mejorando las técnicas de aprendizaje automático que existían hasta el momento. Esta revolución dio pie a la resolución de diferentes tipos de problemas usando la visión artificial en campos como la industria (p.e.: detección de imperfecciones en cadenas de montaje), la robótica (p.e.: navegación autónoma), la medicina (p.e.: detección de cáncer de mama), etc.
+
+\subsubsection{Aplicaciones de la visión artificial}
+
+Este proyecto se basa en la visión artificial aplicada al campo de la robótica, por lo que algunas de los problemas más interesantes que se están estudiando en estos momentos son los siguientes:
+
+\textcolor{red}{Mencionar el problema a resolver, del trabajo de Vane en simulación al trabajo de Vane en real.}
+
+
+\section{Objetivos}
+
+* Mencionar el problema de la conducción autónoma basada en visión únicamente.
+* Desarrollo de una plataforma generalista de evaluación de modelos neuronales de comportamientos complejos.
+* Surgen las DOS PATAS: behaviorstudio y problema de road following
+* CONTEXTO: Estado previo: soluciones a un controlador neuronal basado en visión. 
+* CONTEXTO: El estudio de vane investiga redes de clasificacion sobretodo y alguna de regresión. 
+* APROXIMACIONES: 
+* OBJETIVO: Doble reto: migrar los controladores neuronales a robots reales y centrarse en redes de regresión, mediante transfer learning.
+* OBJETIVO: Integrar la solución en la plataforma evaluadora de forma satisfactoria. ToDos
+
+
+\begin{comment}
+This chapter presents the section levels that can be used in the template. 
+
+\section{Section levels}
+The following table presents an overview of the section levels that are used in this document. The number of levels that are numbered and included in the table of contents is set in the settings file \texttt{Settings.tex}. The levels are shown in Section \ref{Section_ref}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ll} \hline\hline
+Name & Command\\ \hline
+Chapter & \textbackslash\texttt{chapter\{\emph{Chapter name}\}}\\
+Section & \textbackslash\texttt{section\{\emph{Section name}\}}\\
+Subsection & \textbackslash\texttt{subsection\{\emph{Subsection name}\}}\\
+Subsubsection & \textbackslash\texttt{subsubsection\{\emph{Subsubsection name}\}}\\
+Paragraph & \textbackslash\texttt{paragraph\{\emph{Paragraph name}\}}\\
+Subparagraph & \textbackslash\texttt{paragraph\{\emph{Subparagraph name}\}}\\ \hline\hline
+\end{tabular}
+\end{table}
+
+\section{Section} \label{Section_ref}
+\subsection{Subsection}
+\subsubsection{Subsubsection}
+\paragraph{Paragraph}
+\subparagraph{Subparagraph}
+
+\end{comment}
