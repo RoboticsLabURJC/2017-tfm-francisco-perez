@@ -4,11 +4,18 @@
 \thispagestyle{plain}			% Supress header 
 \setlength{\parskip}{0pt plus 1.0pt}
 \section*{Resumen}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+En los últimos años, el campo de la Inteligencia Artificial (AI por sus siglas en inglés) ha explotado en muchas disciplinas, especialmente la Visión Artificial (VA). Uno de los problemas punteros que se está tratando de solucionar con los últimos avances en investigación es el de la conducción autónoma. El acto de conducir para un humano es algo que no requiere mucho esfuerzo mental, ya que somos capaces de tomar decisiones de forma casi instantánea ante cualquier situación que se nos presente mientras conducimos. Sin embargo, para las máquinas este proceso no es tan sencillo. En los últimos años se han propuesto soluciones a este problema empleando el aprendizaje automático, más concretamente las redes neuronales artificiales aplicadas a la VA. Este Trabajo de Fin de Máster trata de solucionar el problema de la conducción autónoma en robots reales utilizando un controlador visual basado en aprendizaje profundo (o \textit{deep learning}); concretamente haciendo uso de un pequeño robot que sea capaz de navegar por una pista sin salirse valiéndose únicamente de la información sensorial proporcionada por una cámara de color.\newline
+
+Los modelos entrenados han de ser capaces de tomar decisiones de calidad de tal forma que la conducción sea lo más robusta posible. Para ello es imprescindible disponer de unos datos de entrenamiento de calidad, que sean representativos del problema y ayuden a las redes a generalizar ante cualquier entrada nunca vista por las mismas. El robot entrenado ha de ser capaz de navegar en diferentes circuitos bajo condiciones de iluminación diversas, por lo que se han creado conjuntos de datos específicos para la tarea a resolver.\newline
+
+Un requisito imprescindible es que la solución ha de utilizar técnicas de aprendizaje automático; más concretamente, el aprendizaje profundo. Para ello, se ha estudiado el estado actual de los modelos de \textit{deep learning} para visión artificial más novedosos, así como el \textit{hardware} específico para trasladar la solución a un robot real. Adicionalmente, se ha desarrollado una plataforma \textit{software} llamada BehaviorStudio para la ejecución y validación de los algoritmos conseguidos para el problema de la conducción autónoma. Por último, se han llevado a cabo diferentes experimentos que demuestran la validez del trabajo realizado.\newline
+
+Las principales contribuciones de este trabajo son el desarrollo de un controlador visual basado en \textit{deep learning} que permite a un robot real cuyo computador es una placa embebida, navegar por diferentes circuitos de forma robusta. Además, se contribuye con el desarrollo de una plataforma \textit{software} destinada a la ejecución y evaluación de algoritmos de control robótico basados en redes neuronales de forma sencilla y flexible.
+
+
 
 % KEYWORDS (MAXIMUM 10 WORDS)
-\vfill
-Keywords: lorem, ipsum, dolor, sit, amet, consectetur, adipisicing, elit, sed, do.
+
 
 \newpage				% Create empty back of side
 \thispagestyle{empty}
